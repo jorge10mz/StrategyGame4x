@@ -1,0 +1,65 @@
+[gd_scene load_steps=5 format=3 uid="uid://w0cnro0d7vxs"]
+
+[ext_resource type="Texture2D" uid="uid://d377624pxrjiw" path="res://Assets/Roma.png" id="1_h3gjx"]
+[ext_resource type="Texture2D" uid="uid://0oecmdptho75" path="res://Assets/Trajano.jpg" id="2_3cmg7"]
+[ext_resource type="Texture2D" uid="uid://cg5kcq1g4j3ol" path="res://Assets/Legion.png" id="3_uns6m"]
+[ext_resource type="Texture2D" uid="uid://p0280fni86sa" path="res://Assets/Daño.png" id="4_s7ub0"]
+
+[node name="Trajano" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Roma" type="Sprite2D" parent="."]
+position = Vector2(88, 64)
+scale = Vector2(4, 4)
+texture = ExtResource("1_h3gjx")
+
+[node name="Label" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 48.0
+offset_top = 80.0
+offset_right = 96.0
+offset_bottom = 103.0
+text = "Roma"
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(72, 160)
+scale = Vector2(0.0533333, 0.0388821)
+texture = ExtResource("2_3cmg7")
+
+[node name="Label2" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 8.0
+offset_top = 200.0
+offset_right = 146.0
+offset_bottom = 249.0
+text = "Trajano, 
+Optimus Princeps"
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(80, 320)
+scale = Vector2(4, 4)
+texture = ExtResource("3_uns6m")
+
+[node name="Label3" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_top = 360.0
+offset_right = 184.0
+offset_bottom = 487.0
+text = "Legion, unidad unica de 
+roma el cual tiene diez 
+de fuerza mas de lo 
+normal
++10"
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(40, 480)
+scale = Vector2(1.75, 1.75)
+texture = ExtResource("4_s7ub0")

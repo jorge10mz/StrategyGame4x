@@ -1,0 +1,59 @@
+[gd_scene load_steps=3 format=3 uid="uid://c3ve0ycvc5axk"]
+
+[ext_resource type="Texture2D" uid="uid://cql5enf18hbm5" path="res://Assets/rgnar lodbrok.jpg" id="1_km523"]
+[ext_resource type="Texture2D" uid="uid://exomyns0yjic" path="res://Assets/oro.png" id="2_fxgi7"]
+
+[node name="Ragnar Lodbrok" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(128, 80)
+scale = Vector2(0.125, 0.2)
+texture = ExtResource("1_km523")
+
+[node name="Label" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 8.0
+offset_top = 152.0
+offset_right = 256.0
+offset_bottom = 253.0
+text = "              Ragnar Lodbrok
+                     Vikingos
+         \"Terror de los mares\"
+Las unidades navales tienen un 
+menor coste en oro sobre el 
+mantenimiento hasta terminando
+la epoca meddieval
+-2 de oro         en mantenimiento
+con los barcos"
+
+[node name="Label2" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 8.0
+offset_top = 392.0
+offset_right = 272.0
+offset_bottom = 441.0
+text = "  \"Leyenda Forjada en Sangre\"
+Obtienes +100        de oro en 
+asaltos navales y +50       de oro
+por victoria naval
+"
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(96, 344)
+texture = ExtResource("2_fxgi7")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(136, 432)
+texture = ExtResource("2_fxgi7")
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+position = Vector2(184, 456)
+texture = ExtResource("2_fxgi7")

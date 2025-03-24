@@ -1,0 +1,70 @@
+[gd_scene load_steps=5 format=3 uid="uid://c5pnxhbyn4o52"]
+
+[ext_resource type="Texture2D" uid="uid://degggdfx80j3m" path="res://Assets/Alejandro magno.jpg" id="1_mw5w5"]
+[ext_resource type="Texture2D" uid="uid://gl2hrc150hkd" path="res://Assets/Espartanos.png" id="2_0h5i0"]
+[ext_resource type="Texture2D" uid="uid://p0280fni86sa" path="res://Assets/Daño.png" id="3_hcw1n"]
+[ext_resource type="Texture2D" uid="uid://b3t8n7tn1mvqe" path="res://Assets/Caballo.png" id="4_lkuih"]
+
+[node name="Alejandro Magno" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(128, 160)
+scale = Vector2(0.232727, 0.237918)
+texture = ExtResource("1_mw5w5")
+
+[node name="Label" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 64.0
+offset_top = 264.0
+offset_right = 197.0
+offset_bottom = 287.0
+text = "Alejandro magno"
+
+[node name="Label2" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 24.0
+offset_top = 304.0
+offset_right = 262.0
+offset_bottom = 353.0
+text = "Tienes un carta extra cada que
+ consigas una carta "
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(128, 424)
+scale = Vector2(4, 4)
+texture = ExtResource("2_0h5i0")
+
+[node name="Label3" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_top = 448.0
+offset_right = 282.0
+offset_bottom = 575.0
+text = "Espartanos sustituyen a los lanceros 
+los cuales tienen +10 de fuerza extra
+ y + 5 de fuerza contra caballeria
++10
++5"
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(44, 540)
+scale = Vector2(1.25, 1.25)
+texture = ExtResource("3_hcw1n")
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+position = Vector2(28, 564)
+scale = Vector2(1.25, 1.25)
+texture = ExtResource("3_hcw1n")
+
+[node name="Sprite2D5" type="Sprite2D" parent="."]
+position = Vector2(56, 560)
+scale = Vector2(1.5, 1.25)
+texture = ExtResource("4_lkuih")

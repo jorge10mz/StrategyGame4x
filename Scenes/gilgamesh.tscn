@@ -1,0 +1,42 @@
+[gd_scene load_steps=4 format=3 uid="uid://buwbepnv7v75t"]
+
+[ext_resource type="Texture2D" uid="uid://cjty5ecpjutwg" path="res://Assets/Gilgamesh.png" id="1_8othn"]
+[ext_resource type="Texture2D" uid="uid://dvon2wfbndgv8" path="res://Assets/Production.png" id="2_uxvho"]
+[ext_resource type="Texture2D" uid="uid://dh52jinpp4esu" path="res://Assets/Movimiento.png" id="3_dgacf"]
+
+[node name="Gilgamesh" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(160, 160)
+scale = Vector2(0.537815, 0.611465)
+texture = ExtResource("1_8othn")
+
+[node name="Label" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_top = 272.0
+offset_right = 206.0
+offset_bottom = 295.0
+text = "                              Gilgamesh
+                        \"Fuerza de Uruk\"
+las ciudades costruidascerca de rios y
+costas obtienen +1       en produccion y las
+unidades cuerpo a cuerpo son un 25% mas
+baratas y no consumen puntos        de
+movimiento al saquear"
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(160, 368)
+scale = Vector2(1.75, 1.75)
+texture = ExtResource("2_uxvho")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(256, 424)
+scale = Vector2(2.375, 2.375)
+texture = ExtResource("3_dgacf")

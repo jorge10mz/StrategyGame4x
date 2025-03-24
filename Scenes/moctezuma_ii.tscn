@@ -1,0 +1,55 @@
+[gd_scene load_steps=5 format=3 uid="uid://clwa80nawlvec"]
+
+[ext_resource type="Texture2D" uid="uid://5npeio1svvku" path="res://Assets/Moctezuma Segundo.jpeg" id="1_m0ils"]
+[ext_resource type="Texture2D" uid="uid://bg3afqsdbgaog" path="res://Assets/Unidad azteca.png" id="2_5mfu1"]
+[ext_resource type="Texture2D" uid="uid://p0280fni86sa" path="res://Assets/Daño.png" id="3_i1dgb"]
+[ext_resource type="Texture2D" uid="uid://dx3i4w4ape34t" path="res://Assets/Felicidad.png" id="4_mm6qi"]
+
+[node name="Moctezuma II" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(160, 160)
+scale = Vector2(0.603774, 1.2044)
+texture = ExtResource("1_m0ils")
+
+[node name="Label" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_top = 272.0
+offset_right = 213.0
+offset_bottom = 295.0
+text = "                          Moctezuma II
+Tiene su unidad exclusiva guerreros aguila
+        los cuales tienen una bonificacion de 
++5        de daño. Los recursos de lujo te da
++1           de felicidad extra en las ciudades
+y las copias de recurso de lujo en lugr de 
+no darte felicidad te va a dar +1          en 
+felicidd por cada copi de recurso de lujo
+que tengas"
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(8, 344)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_5mfu1")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(32, 368)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("3_i1dgb")
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+position = Vector2(40, 392)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("4_mm6qi")
+
+[node name="Sprite2D5" type="Sprite2D" parent="."]
+position = Vector2(264, 440)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("4_mm6qi")

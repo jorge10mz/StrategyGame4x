@@ -1,0 +1,45 @@
+[gd_scene load_steps=4 format=3 uid="uid://cdpfir3ufbhcv"]
+
+[ext_resource type="Texture2D" uid="uid://wr6ghmhlqmsr" path="res://Assets/Juana de arco.jpeg" id="1_lkgsa"]
+[ext_resource type="Texture2D" uid="uid://df60ewd7ohk05" path="res://Assets/Fe.png" id="2_x2nbv"]
+[ext_resource type="Texture2D" uid="uid://p0280fni86sa" path="res://Assets/Daño.png" id="3_rbkk4"]
+
+[node name="Juana de arco" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(159.75, 159.75)
+scale = Vector2(0.798755, 0.921053)
+texture = ExtResource("1_lkgsa")
+
+[node name="Label" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_top = 280.0
+offset_right = 219.0
+offset_bottom = 303.0
+text = "                         Juana de Arco
+              \"La Doncella de la Batalla\"
+las bonificacios pasivas de ataque por los
+grandes generales se les añade un +5       
+de fuerza de combate. tambien tiene una
+bonificacion de +50          de fe por derrotar
+a otras unidades terrestres. tiene un 50%
+mas facil la expansion de religion es sus 
+ciudades y un 25% mas facil a ciudades
+extranjeras"
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(176, 424)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_x2nbv")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(304, 376)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("3_rbkk4")

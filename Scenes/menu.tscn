@@ -1,0 +1,32 @@
+[gd_scene load_steps=3 format=3 uid="uid://c12qse0ly8cm4"]
+
+[ext_resource type="Script" uid="uid://d0q0n4al1s81b" path="res://Scenes/menu.gd" id="1_1lj0s"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_elfcf"]
+
+[node name="Menu" type="Node2D"]
+script = ExtResource("1_1lj0s")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="Button" type="Button" parent="CanvasLayer"]
+offset_left = 407.0
+offset_top = 203.0
+offset_right = 680.0
+offset_bottom = 261.0
+text = "Start"
+
+[node name="Button2" type="Button" parent="CanvasLayer"]
+offset_left = 408.0
+offset_top = 288.0
+offset_right = 680.0
+offset_bottom = 319.0
+text = "Quiet "
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.508593, 0.443812, 0.214787, 1)
+position = Vector2(576, 324)
+scale = Vector2(1152, 648)
+texture = SubResource("CanvasTexture_elfcf")
+
+[connection signal="pressed" from="CanvasLayer/Button" to="." method="_on_button_pressed"]

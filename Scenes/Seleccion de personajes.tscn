@@ -1,0 +1,172 @@
+[gd_scene load_steps=14 format=3 uid="uid://c630bojuhltl5"]
+
+[ext_resource type="PackedScene" uid="uid://dlpl0lkve5wwa" path="res://Scenes/Anubis.tscn" id="1_qhlxd"]
+[ext_resource type="Script" uid="uid://csei1rafyg43m" path="res://Scenes/seleccion_de_personajes.gd" id="1_wmjbk"]
+[ext_resource type="PackedScene" uid="uid://w0cnro0d7vxs" path="res://Scenes/trajano.tscn" id="3_mfw1u"]
+[ext_resource type="PackedScene" uid="uid://c5pnxhbyn4o52" path="res://Scenes/alejandro_magno.tscn" id="4_7sd7f"]
+[ext_resource type="PackedScene" uid="uid://dwbqjfegd8237" path="res://Scenes/confucio.tscn" id="5_f5qmq"]
+[ext_resource type="PackedScene" uid="uid://c3ve0ycvc5axk" path="res://Scenes/ragnar_lodbrok.tscn" id="6_pkn1t"]
+[ext_resource type="PackedScene" uid="uid://cdpfir3ufbhcv" path="res://Scenes/juana_de_arco.tscn" id="7_wdpj0"]
+[ext_resource type="PackedScene" uid="uid://clwa80nawlvec" path="res://Scenes/moctezuma_ii.tscn" id="8_uc0g4"]
+[ext_resource type="PackedScene" uid="uid://ex6w402p81ll" path="res://Scenes/porfirio_diaz.tscn" id="9_0nc4r"]
+[ext_resource type="PackedScene" uid="uid://buwbepnv7v75t" path="res://Scenes/gilgamesh.tscn" id="10_rnn52"]
+[ext_resource type="PackedScene" uid="uid://c7tt3ay7o4fhk" path="res://Scenes/ciro_ii_el_grande.tscn" id="11_rccs6"]
+[ext_resource type="AudioStream" uid="uid://eqtatqp86qn7" path="res://Music/Musica de fondo.mp3" id="12_x5e8f"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_pubm2"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_wmjbk")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0.508593, 0.443812, 0.214787, 1)
+position = Vector2(576, 324)
+scale = Vector2(1152, 648)
+texture = SubResource("CanvasTexture_pubm2")
+
+[node name="Botones" type="Node2D" parent="."]
+
+[node name="Egipto" type="Button" parent="Botones"]
+offset_left = 712.0
+offset_top = 79.0
+offset_right = 1100.0
+offset_bottom = 110.0
+text = "Egipto"
+
+[node name="Roma" type="Button" parent="Botones"]
+offset_left = 712.0
+offset_top = 120.0
+offset_right = 1097.0
+offset_bottom = 168.0
+text = "Roma"
+
+[node name="Grecia" type="Button" parent="Botones"]
+offset_left = 712.0
+offset_top = 184.0
+offset_right = 1096.0
+offset_bottom = 223.0
+text = "Grecia"
+
+[node name="china" type="Button" parent="Botones"]
+offset_left = 712.0
+offset_top = 240.0
+offset_right = 1096.0
+offset_bottom = 280.0
+text = "China"
+
+[node name="Vikingos" type="Button" parent="Botones"]
+offset_left = 712.0
+offset_top = 296.0
+offset_right = 1096.0
+offset_bottom = 336.0
+text = "Vikingos"
+
+[node name="Francia" type="Button" parent="Botones"]
+offset_left = 712.0
+offset_top = 352.0
+offset_right = 1096.0
+offset_bottom = 391.0
+text = "Francia"
+
+[node name="Azteca" type="Button" parent="Botones"]
+offset_left = 712.0
+offset_top = 408.0
+offset_right = 1096.0
+offset_bottom = 448.0
+text = "Azteca"
+
+[node name="Mexico" type="Button" parent="Botones"]
+offset_left = 712.0
+offset_top = 464.0
+offset_right = 1096.0
+offset_bottom = 504.0
+text = "Mexico"
+
+[node name="Sumeria" type="Button" parent="Botones"]
+offset_left = 712.0
+offset_top = 520.0
+offset_right = 1096.0
+offset_bottom = 559.0
+text = "Sumeria"
+
+[node name="Persia" type="Button" parent="Botones"]
+offset_left = 712.0
+offset_top = 576.0
+offset_right = 1096.0
+offset_bottom = 616.0
+text = "Persia"
+
+[node name="start" type="Button" parent="Botones"]
+offset_left = 424.0
+offset_top = 296.0
+offset_right = 470.0
+offset_bottom = 327.0
+text = "           Start          "
+
+[node name="Lideres" type="Node2D" parent="."]
+
+[node name="Anubis" parent="Lideres" instance=ExtResource("1_qhlxd")]
+visible = false
+
+[node name="Trajano" parent="Lideres" instance=ExtResource("3_mfw1u")]
+visible = false
+offset_left = 48.0
+offset_top = 16.0
+offset_right = 48.0
+offset_bottom = 16.0
+
+[node name="Alejandro Magno" parent="Lideres" instance=ExtResource("4_7sd7f")]
+visible = false
+
+[node name="Confucio" parent="Lideres" instance=ExtResource("5_f5qmq")]
+visible = false
+
+[node name="Ragnar Lodbrok" parent="Lideres" instance=ExtResource("6_pkn1t")]
+visible = false
+
+[node name="Juana de arco" parent="Lideres" instance=ExtResource("7_wdpj0")]
+visible = false
+
+[node name="Moctezuma II" parent="Lideres" instance=ExtResource("8_uc0g4")]
+visible = false
+
+[node name="Porfirio Diaz" parent="Lideres" instance=ExtResource("9_0nc4r")]
+visible = false
+
+[node name="Gilgamesh" parent="Lideres" instance=ExtResource("10_rnn52")]
+visible = false
+
+[node name="Ciro II el grande" parent="Lideres" instance=ExtResource("11_rccs6")]
+visible = false
+
+[node name="Label" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 432.0
+offset_top = 22.0
+offset_right = 624.0
+offset_bottom = 45.0
+text = "Seleccione su civilizacion"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("12_x5e8f")
+autoplay = true
+parameters/looping = true
+
+[connection signal="pressed" from="Botones/Egipto" to="." method="_on_egipto_pressed"]
+[connection signal="pressed" from="Botones/Roma" to="." method="_on_roma_pressed"]
+[connection signal="pressed" from="Botones/Grecia" to="." method="_on_grecia_pressed"]
+[connection signal="pressed" from="Botones/china" to="." method="_on_china_pressed"]
+[connection signal="pressed" from="Botones/Vikingos" to="." method="_on_vikingos_pressed"]
+[connection signal="pressed" from="Botones/Francia" to="." method="_on_francia_pressed"]
+[connection signal="pressed" from="Botones/Azteca" to="." method="_on_azteca_pressed"]
+[connection signal="pressed" from="Botones/Mexico" to="." method="_on_mexico_pressed"]
+[connection signal="pressed" from="Botones/Sumeria" to="." method="_on_sumeria_pressed"]
+[connection signal="pressed" from="Botones/Persia" to="." method="_on_persia_pressed"]
+[connection signal="pressed" from="Botones/start" to="." method="_on_start_pressed"]

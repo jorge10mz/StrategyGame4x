@@ -1,0 +1,43 @@
+[gd_scene load_steps=4 format=3 uid="uid://ex6w402p81ll"]
+
+[ext_resource type="Texture2D" uid="uid://pq5s2yxk1ske" path="res://Assets/images.jpeg" id="1_gvjql"]
+[ext_resource type="Texture2D" uid="uid://exomyns0yjic" path="res://Assets/oro.png" id="2_q5rrh"]
+[ext_resource type="Texture2D" uid="uid://dvon2wfbndgv8" path="res://Assets/Production.png" id="3_iq5bk"]
+
+[node name="Porfirio Diaz" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(127.5, 160)
+scale = Vector2(0.664949, 0.741313)
+texture = ExtResource("1_gvjql")
+
+[node name="Label" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_top = 264.0
+offset_right = 175.0
+offset_bottom = 287.0
+text = "                   Porfirio Diaz
+             \"Orden y progreso\"
+Obtiene +1         en oro por los
+mercados que construyas y los
+grandes ingenieros al momento
+de usarlos para hacer fabricas
+estas fabricas dan         +6 de
+produccion en lugar del +4 que
+suele dar"
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(104, 328)
+texture = ExtResource("2_q5rrh")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(160, 440)
+scale = Vector2(2, 2)
+texture = ExtResource("3_iq5bk")

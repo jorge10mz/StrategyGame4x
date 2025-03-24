@@ -1,0 +1,84 @@
+[gd_scene load_steps=7 format=3 uid="uid://dwbqjfegd8237"]
+
+[ext_resource type="Texture2D" uid="uid://ddpqw503yqx1h" path="res://Assets/Confucio.jpg" id="1_nsroj"]
+[ext_resource type="Texture2D" uid="uid://dx3i4w4ape34t" path="res://Assets/Felicidad.png" id="2_qnr47"]
+[ext_resource type="Texture2D" uid="uid://dus4bym75l3j2" path="res://Assets/Capital.png" id="3_74n3d"]
+[ext_resource type="Texture2D" uid="uid://btmkawxrldm6m" path="res://Assets/Ciudad.png" id="4_popar"]
+[ext_resource type="Texture2D" uid="uid://bsblfqp1rs04r" path="res://Assets/Cultura.png" id="5_a83ev"]
+[ext_resource type="Texture2D" uid="uid://bs3rlnx32lwc0" path="res://Assets/Gran escritor.png" id="6_hpiwh"]
+
+[node name="Confucio" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(120, 152)
+scale = Vector2(0.3, 0.282873)
+texture = ExtResource("1_nsroj")
+
+[node name="Label" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_left = 64.0
+offset_top = 280.0
+offset_right = 189.0
+offset_bottom = 329.0
+text = "      Confucio
+\"Etica del sabio\""
+
+[node name="Label2" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_top = 336.0
+offset_right = 253.0
+offset_bottom = 359.0
+text = "La capital obtiene +3 de felicidad
+y más dos para las ciudades.
++3
++2
+"
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(40, 400)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_qnr47")
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(40, 432)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("2_qnr47")
+
+[node name="Sprite2D4" type="Sprite2D" parent="."]
+position = Vector2(72, 400)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("3_74n3d")
+
+[node name="Sprite2D5" type="Sprite2D" parent="."]
+position = Vector2(72, 432)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("4_popar")
+
+[node name="Label3" type="Label" parent="."]
+modulate = Color(0, 0, 0, 1)
+layout_mode = 0
+offset_top = 448.0
+offset_right = 165.0
+offset_bottom = 471.0
+text = "         \"Sabiduria Ancestral\"
+Tiene un 25% mas facil la obtencion
+de cultura y grandes escritotres
++25%
++25%"
+
+[node name="Sprite2D6" type="Sprite2D" parent="."]
+position = Vector2(60, 544)
+scale = Vector2(1.75, 1.5)
+texture = ExtResource("5_a83ev")
+
+[node name="Sprite2D7" type="Sprite2D" parent="."]
+position = Vector2(56, 560)
+texture = ExtResource("6_hpiwh")
