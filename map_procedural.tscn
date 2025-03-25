@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cuondpmwepd0b"]
+
+[ext_resource type="Script" uid="uid://cexppr51sd5sx" path="res://Scenes/map_procedural.gd" id="1_rrc61"]
+
+[node name="MapProcedural" type="Node2D"]
+script = ExtResource("1_rrc61")
